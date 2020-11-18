@@ -19,7 +19,7 @@ RUN mkdir -p ${CROWD_INSTALL}/lib ${CROWD_HOME} \
 && curl -o /tmp/atlassian.tar.gz https://product-downloads.atlassian.com/software/crowd/downloads/atlassian-${CROWD_PRODUCT}-${CROWD_VERSION}.tar.gz -L \
 && tar xzf /tmp/atlassian.tar.gz -C ${CROWD_INSTALL}/ --strip-components 1 \
 && rm -f /tmp/atlassian.tar.gz \
-&& curl -o ${CROWD_INSTALL}/lib/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar -L \
+&& curl -o ${CROWD_INSTALL}/apache-tomcat/lib/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar -L \
 && echo "crowd.home = ${CROWD_HOME}" > ${CROWD_INSTALL}/crowd-webapp/WEB-INF/classes/crowd-init.properties
 
 RUN export CONTAINER_USER=$CROWD_USER \
