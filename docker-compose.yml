@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   crowd:
-    image: zouchengli/crowd
+    image: zouchengli/crowd:crack
     container_name: crowd-srv
     environment:
       - TZ='Asia/Shanghai'
