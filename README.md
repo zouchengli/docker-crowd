@@ -1,6 +1,6 @@
 # docker-crowd
 # crowd
-default port: 8080
+default port: 8095
 
 ## How to run with docker
 
