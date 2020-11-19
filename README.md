@@ -7,7 +7,7 @@ default port: 8095
 - start crowd
 
 ```
-    docker run -p 8095:8095 -v crowd_home_data:/var/crowd --network crowd-network --name crowd-srv -e TZ='Asia/Shanghai' zouchengli/crowd
+    docker run -p 8095:8095 -v crowd_home_data:/var/crowd --name crowd-srv -e TZ='Asia/Shanghai' zouchengli/crowd
 ```
 ## How to run with docker-compose
 
